@@ -8,10 +8,26 @@
 </head>
 <body>
     <h1 onclick="console.log('I am Clicked')">DOM ar kaj special events </h1>
-    <button title="This is tooltip" onclick="console.log(7)">click me</button>
-    <button onclick="makeRed()">Another button</button>
-    <button id="make-yellow">Make Yellow</button>
-    <button onclick="document.body.style.backgroundColor = 'blue'">Make Blue</button>
+    <button title="This is tooltip" onclick="console.log()">click me</button>
+    <button onclick="makeRed()">Red function</button>
+    <button id="make-yellow">onclik function</button>
+    <button id="make-green">onclik function direct</button>
+    <button id="make-pink">addEventlistener</button>
+    <button id="make-black">addEvent_funB</button>
+    <button id="make-orange">Strong system</button>
+    <button onclick="document.body.style.backgroundColor = 'blue'">click Blue</button>
+
+    <script src="event.js"></script>
+    <script>
+        const makeYellowButton = document.getElementById('make-yellow');
+        makeYellowButton.onclick = makeyellow;
+
+        function makeyellow()
+        {
+            document.body.style.backgroundColor = 'yellow';
+        }
+    </script>
+
     
 </body>
 </html>
